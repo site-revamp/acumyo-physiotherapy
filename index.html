@@ -1,0 +1,1479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2b2c32">
+  <meta name="description" content="Discover physiotherapy, acupuncture and hands-on rehabilitation at AcuMyo in Jumeirah Village Circle, Dubai. Book a personalised consultation.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://acumyo.com/">
+  <title>AcuMyo Physiotherapy Center | Physiotherapy in JVC, Dubai</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AcuMyo Physiotherapy Center | Better Movement Starts Here">
+  <meta property="og:description" content="Personalised physiotherapy, acupuncture and hands-on care in Jumeirah Village Circle, Dubai.">
+  <meta property="og:url" content="https://acumyo.com/">
+  <meta property="og:site_name" content="AcuMyo Physiotherapy Center">
+
+  <style>
+    :root {
+      --color-primary: #2B2C32;
+      --color-primary-dark: #1C1D22;
+      --color-primary-light: #454750;
+      --color-secondary: #7BAAED;
+      --color-secondary-dark: #4E82C6;
+      --color-secondary-light: #DCEAFF;
+      --color-accent: #A9C9F4;
+      --color-heading: #252831;
+      --color-text: #424957;
+      --color-text-muted: #697586;
+      --color-background: #FFFFFF;
+      --color-background-alt: #F4F7FB;
+      --color-surface: #FFFFFF;
+      --color-surface-alt: #EAF1FA;
+      --color-border: #DFE5ED;
+      --color-border-strong: #B8C7DA;
+      --color-interactive: #356EB7;
+      --color-interactive-hover: #5E91D2;
+      --color-focus: #356EB7;
+
+      --font-heading: "Sora", sans-serif;
+      --font-body: "DM Sans", sans-serif;
+      --container: 1240px;
+      --radius-sm: 10px;
+      --radius-md: 18px;
+      --radius-lg: 28px;
+      --shadow-soft: 0 18px 55px rgba(32, 43, 62, .09);
+      --shadow-card: 0 12px 35px rgba(32, 43, 62, .07);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 100px; }
+    body {
+      margin: 0;
+      color: var(--color-text);
+      background: var(--color-background);
+      font-family: var(--font-body);
+      font-size: 17px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    body.menu-open { overflow: hidden; }
+    img { display: block; width: 100%; height: auto; }
+    a { color: inherit; text-decoration: none; }
+    button, input, textarea { font: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    button { cursor: pointer; }
+    :focus-visible { outline: 3px solid var(--color-focus); outline-offset: 4px; }
+    ::selection { background: var(--color-secondary-light); color: var(--color-primary-dark); }
+
+    .container { width: min(var(--container), calc(100% - 48px)); margin-inline: auto; }
+    .section { padding: 112px 0; }
+    .section--soft { background: var(--color-background-alt); }
+    .section--dark { background: var(--color-primary); color: #fff; }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 20px;
+      color: var(--color-secondary-dark);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .15em;
+      line-height: 1.4;
+      text-transform: uppercase;
+    }
+    .eyebrow::before {
+      content: "";
+      width: 27px;
+      height: 2px;
+      background: var(--color-secondary);
+    }
+    .section--dark .eyebrow { color: var(--color-accent); }
+    .section-title {
+      max-width: 760px;
+      margin: 0;
+      color: var(--color-heading);
+      font-family: var(--font-heading);
+      font-size: clamp(36px, 4.1vw, 54px);
+      font-weight: 600;
+      letter-spacing: -.055em;
+      line-height: 1.13;
+    }
+    .section--dark .section-title { color: #fff; }
+    .section-intro {
+      max-width: 650px;
+      margin: 22px 0 0;
+      color: var(--color-text-muted);
+      font-size: 18px;
+    }
+    .section--dark .section-intro { color: rgba(255,255,255,.72); }
+    .text-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--color-interactive);
+      font-weight: 700;
+    }
+    .text-link span { transition: transform .2s ease; }
+    .text-link:hover span { transform: translateX(5px); }
+
+    .button {
+      display: inline-flex;
+      min-height: 54px;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 14px 23px;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      background: var(--color-primary);
+      color: #fff;
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 1.2;
+      transition: background .2s ease, color .2s ease, border-color .2s ease, transform .2s ease;
+    }
+    .button:hover { background: var(--color-primary-light); transform: translateY(-2px); }
+    .button--blue { background: var(--color-secondary); color: var(--color-primary-dark); }
+    .button--blue:hover { background: var(--color-interactive-hover); color: #fff; }
+    .button--outline {
+      border-color: rgba(255,255,255,.38);
+      background: transparent;
+      color: #fff;
+    }
+    .button--outline:hover { border-color: #fff; background: #fff; color: var(--color-primary); }
+    .button--light {
+      background: #fff;
+      color: var(--color-primary);
+    }
+    .button--light:hover { background: var(--color-secondary-light); color: var(--color-primary-dark); }
+    .button svg { width: 17px; height: 17px; }
+
+    /* Header */
+    .site-header {
+      position: sticky;
+      z-index: 100;
+      top: 0;
+      border-bottom: 1px solid rgba(223,229,237,.8);
+      background: rgba(255,255,255,.94);
+      backdrop-filter: blur(16px);
+    }
+    .nav-wrap {
+      display: flex;
+      min-height: 84px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 11px;
+      flex-shrink: 0;
+    }
+    .brand-mark {
+      display: grid;
+      width: 42px;
+      height: 42px;
+      place-items: center;
+      border-radius: 13px;
+      background: var(--color-primary);
+      color: var(--color-secondary);
+      font-family: var(--font-heading);
+      font-size: 21px;
+      font-weight: 700;
+      letter-spacing: -.08em;
+    }
+    .brand-name {
+      color: var(--color-primary);
+      font-family: var(--font-heading);
+      font-size: 21px;
+      font-weight: 700;
+      letter-spacing: -.06em;
+    }
+    .brand-name small {
+      display: block;
+      margin-top: -3px;
+      color: var(--color-text-muted);
+      font-family: var(--font-body);
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+    .main-nav { display: flex; align-items: center; gap: 30px; }
+    .main-nav a {
+      color: var(--color-text);
+      font-size: 14px;
+      font-weight: 600;
+      transition: color .2s ease;
+    }
+    .main-nav a:hover { color: var(--color-interactive); }
+    .nav-actions { display: flex; align-items: center; gap: 12px; }
+    .nav-actions .button { min-height: 46px; padding: 12px 19px; font-size: 14px; }
+    .menu-toggle {
+      display: none;
+      width: 46px;
+      height: 46px;
+      border: 1px solid var(--color-border);
+      border-radius: 50%;
+      background: #fff;
+      color: var(--color-primary);
+    }
+    .menu-toggle span, .menu-toggle::before, .menu-toggle::after {
+      display: block;
+      width: 18px;
+      height: 2px;
+      margin: 4px auto;
+      background: currentColor;
+      content: "";
+      transition: transform .2s ease;
+    }
+
+    /* Hero */
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 54px 0 82px;
+      background:
+        radial-gradient(circle at 85% 10%, rgba(123,170,237,.19), transparent 28%),
+        linear-gradient(115deg, #F7F9FC 0%, #FFFFFF 55%, #EDF4FD 100%);
+    }
+    .hero::before {
+      position: absolute;
+      top: -160px;
+      right: -180px;
+      width: 560px;
+      height: 560px;
+      border: 1px solid rgba(123,170,237,.3);
+      border-radius: 50%;
+      content: "";
+      box-shadow: 0 0 0 42px rgba(123,170,237,.035), 0 0 0 90px rgba(123,170,237,.025);
+      pointer-events: none;
+    }
+    .hero-grid {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1.02fr .98fr;
+      align-items: center;
+      gap: clamp(40px, 7vw, 90px);
+    }
+    .hero-copy { position: relative; z-index: 2; padding: 35px 0; }
+    .hero-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 24px;
+      color: var(--color-primary-light);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .hero-kicker i {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--color-secondary-dark);
+      box-shadow: 0 0 0 5px rgba(123,170,237,.18);
+    }
+    .hero h1 {
+      max-width: 680px;
+      margin: 0;
+      color: var(--color-primary);
+      font-family: var(--font-heading);
+      font-size: clamp(46px, 5.8vw, 76px);
+      font-weight: 600;
+      letter-spacing: -.075em;
+      line-height: 1.06;
+    }
+    .hero h1 em {
+      color: var(--color-secondary-dark);
+      font-style: normal;
+    }
+    .hero-description {
+      max-width: 565px;
+      margin: 25px 0 30px;
+      color: var(--color-text);
+      font-size: 18px;
+      line-height: 1.75;
+    }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+    .hero-note {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      margin-top: 28px;
+      color: var(--color-text-muted);
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .hero-note strong { color: var(--color-primary); }
+    .hero-note .dot { width: 4px; height: 4px; border-radius: 50%; background: var(--color-secondary-dark); }
+    .hero-visual {
+      position: relative;
+      min-height: 570px;
+      padding: 0 0 36px 32px;
+    }
+    .hero-photo {
+      position: absolute;
+      inset: 0 0 36px 32px;
+      overflow: hidden;
+      border-radius: 46% 46% 20px 20px;
+      background: #DCE6F2;
+      box-shadow: var(--shadow-soft);
+    }
+    .hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 45%; }
+    .hero-photo::after {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 55%, rgba(28,29,34,.2));
+      content: "";
+    }
+    .hero-index {
+      position: absolute;
+      top: 34px;
+      left: 0;
+      display: grid;
+      width: 78px;
+      height: 78px;
+      place-items: center;
+      border: 8px solid #F7F9FC;
+      border-radius: 50%;
+      background: var(--color-secondary);
+      color: var(--color-primary-dark);
+      font-family: var(--font-heading);
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: -.06em;
+    }
+    .hero-caption {
+      position: absolute;
+      right: -12px;
+      bottom: 0;
+      width: min(290px, 72%);
+      padding: 23px 25px;
+      border: 1px solid rgba(255,255,255,.7);
+      border-radius: 18px;
+      background: rgba(255,255,255,.95);
+      box-shadow: var(--shadow-soft);
+      backdrop-filter: blur(12px);
+    }
+    .hero-caption small {
+      display: block;
+      margin-bottom: 7px;
+      color: var(--color-secondary-dark);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+    .hero-caption strong {
+      display: block;
+      color: var(--color-primary);
+      font-family: var(--font-heading);
+      font-size: 17px;
+      line-height: 1.4;
+    }
+
+    /* Trust strip */
+    .trust-strip { border-bottom: 1px solid var(--color-border); background: #fff; }
+    .trust-inner {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+      gap: 25px;
+      padding: 25px 0;
+    }
+    .trust-item { display: flex; align-items: center; justify-content: center; gap: 13px; }
+    .trust-item b {
+      color: var(--color-primary);
+      font-family: var(--font-heading);
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .trust-item span { color: var(--color-text-muted); font-size: 12px; }
+    .trust-divider { width: 1px; height: 34px; background: var(--color-border); }
+
+    /* Problem / needs section */
+    .needs-layout {
+      display: grid;
+      grid-template-columns: .75fr 1.25fr;
+      gap: 80px;
+      align-items: start;
+    }
+    .needs-aside { position: sticky; top: 120px; }
+    .needs-aside .section-title { font-size: clamp(34px, 3.6vw, 48px); }
+    .needs-aside p { max-width: 360px; margin: 20px 0 25px; color: var(--color-text-muted); }
+    .needs-content { padding-top: 8px; }
+    .needs-intro {
+      max-width: 680px;
+      margin: 0 0 32px;
+      color: var(--color-text);
+      font-size: 19px;
+      line-height: 1.7;
+    }
+    .needs-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      border-top: 1px solid var(--color-border);
+    }
+    .need {
+      display: flex;
+      min-height: 92px;
+      align-items: center;
+      gap: 15px;
+      padding: 20px 12px 20px 0;
+      border-bottom: 1px solid var(--color-border);
+    }
+    .need:nth-child(odd) { margin-right: 24px; }
+    .need-number {
+      color: var(--color-secondary-dark);
+      font-family: var(--font-heading);
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .need strong { color: var(--color-primary); font-size: 15px; font-weight: 600; }
+
+    /* Treatments - exactly three custom SVG icons */
+    .treatment-heading {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 35px;
+      margin-bottom: 55px;
+    }
+    .treatment-heading .section-intro { max-width: 430px; margin: 0; }
+    .treatment-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+      border-top: 1px solid var(--color-border-strong);
+      border-bottom: 1px solid var(--color-border-strong);
+    }
+    .treatment {
+      position: relative;
+      min-height: 360px;
+      padding: 36px 30px 34px 0;
+    }
+    .treatment + .treatment { padding-left: 30px; border-left: 1px solid var(--color-border); }
+    .treatment-number {
+      position: absolute;
+      top: 30px;
+      right: 24px;
+      color: #AAB5C4;
+      font-family: var(--font-heading);
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .treatment-icon {
+      display: grid;
+      width: 62px;
+      height: 62px;
+      place-items: center;
+      margin-bottom: 27px;
+      border-radius: 18px;
+      background: var(--color-secondary-light);
+      color: var(--color-primary);
+    }
+    .treatment-icon svg { width: 30px; height: 30px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+    .treatment h3 {
+      margin: 0 0 14px;
+      color: var(--color-primary);
+      font-family: var(--font-heading);
+      font-size: 22px;
+      font-weight: 600;
+      letter-spacing: -.04em;
+    }
+    .treatment p { min-height: 88px; margin: 0 0 23px; color: var(--color-text-muted); font-size: 15px; }
+    .treatment .text-link { font-size: 14px; }
+
+    /* Signature positioning */
+    .statement {
+      position: relative;
+      overflow: hidden;
+      padding: 100px 0;
+      background: var(--color-primary);
+      color: #fff;
+    }
+    .statement::before, .statement::after {
+      position: absolute;
+      width: 390px;
+      height: 390px;
+      border: 1px solid rgba(123,170,237,.24);
+      border-radius: 50%;
+      content: "";
+      pointer-events: none;
+    }
+    .statement::before { top: -210px; right: -50px; box-shadow: 0 0 0 35px rgba(123,170,237,.035), 0 0 0 75px rgba(123,170,237,.025); }
+    .statement::after { bottom: -300px; left: -100px; }
+    .statement-inner { position: relative; z-index: 1; display: grid; grid-template-columns: .35fr 1.65fr; gap: 55px; align-items: start; }
+    .statement-mark {
+      color: var(--color-secondary);
+      font-family: var(--font-heading);
+      font-size: clamp(64px, 9vw, 118px);
+      font-weight: 600;
+      letter-spacing: -.1em;
+      line-height: .9;
+    }
+    .statement blockquote {
+      max-width: 900px;
+      margin: 0;
+      color: #fff;
+      font-family: var(--font-heading);
+      font-size: clamp(30px, 4.4vw, 58px);
+      font-weight: 500;
+      letter-spacing: -.06em;
+      line-height: 1.22;
+    }
+    .statement blockquote span { color: var(--color-secondary); }
+    .statement-note { margin: 28px 0 0; color: rgba(255,255,255,.66); font-size: 15px; }
+
+    /* Approach */
+    .approach-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 90px;
+      align-items: center;
+    }
+    .approach-image {
+      position: relative;
+      min-height: 560px;
+      overflow: hidden;
+      border-radius: 18px 180px 18px 18px;
+      background: var(--color-surface-alt);
+    }
+    .approach-image img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+    .approach-image::after { position: absolute; inset: 0; background: linear-gradient(0deg, rgba(28,29,34,.23), transparent 45%); content: ""; }
+    .approach-tag {
+      position: absolute;
+      z-index: 1;
+      right: 20px;
+      bottom: 20px;
+      max-width: 230px;
+      padding: 18px 20px;
+      border-radius: 14px;
+      background: #fff;
+      color: var(--color-primary);
+      font-family: var(--font-heading);
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 1.45;
+      box-shadow: var(--shadow-card);
+    }
+    .approach-copy .section-intro { margin-bottom: 32px; }
+    .approach-steps { border-top: 1px solid var(--color-border); }
+    .approach-step {
+      display: grid;
+      grid-template-columns: 48px 1fr;
+      gap: 16px;
+      padding: 20px 0;
+      border-bottom: 1px solid var(--color-border);
+    }
+    .approach-step span {
+      color: var(--color-secondary-dark);
+      font-family: var(--font-heading);
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .approach-step h3 { margin: 0 0 5px; color: var(--color-primary); font-size: 16px; font-weight: 700; }
+    .approach-step p { margin: 0; color: var(--color-text-muted); font-size: 14px; }
+
+    /* Team - three SVG icons */
+    .team-top {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 30px;
+      margin-bottom: 48px;
+    }
+    .team-top .section-intro { max-width: 460px; margin: 0; }
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+    .team-member {
+      position: relative;
+      padding: 28px;
+      border-top: 2px solid var(--color-secondary);
+      background: #fff;
+      box-shadow: var(--shadow-card);
+    }
+    .team-symbol {
+      display: grid;
+      width: 54px;
+      height: 54px;
+      place-items: center;
+      margin-bottom: 30px;
+      border-radius: 50%;
+      background: var(--color-primary);
+      color: var(--color-secondary);
+    }
+    .team-symbol svg { width: 26px; height: 26px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+    .team-member small { color: var(--color-secondary-dark); font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+    .team-member h3 { margin: 9px 0 8px; color: var(--color-primary); font-family: var(--font-heading); font-size: 20px; font-weight: 600; letter-spacing: -.04em; }
+    .team-member p { min-height: 96px; margin: 0; color: var(--color-text-muted); font-size: 14px; }
+    .team-footnote { margin: 23px 0 0; color: var(--color-text-muted); font-size: 12px; }
+
+    /* Workday section */
+    .workday {
+      position: relative;
+      overflow: hidden;
+      padding: 95px 0;
+      background: var(--color-secondary-light);
+    }
+    .workday::after {
+      position: absolute;
+      top: -190px;
+      right: -120px;
+      width: 470px;
+      height: 470px;
+      border: 1px solid rgba(78,130,198,.25);
+      border-radius: 50%;
+      box-shadow: 0 0 0 45px rgba(78,130,198,.05), 0 0 0 95px rgba(78,130,198,.035);
+      content: "";
+    }
+    .workday-inner { position: relative; z-index: 1; display: grid; grid-template-columns: 1fr .8fr; align-items: center; gap: 65px; }
+    .workday .section-title { max-width: 650px; }
+    .workday p { max-width: 570px; color: var(--color-text); }
+    .time-list { display: grid; gap: 12px; }
+    .time-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 19px 22px;
+      border: 1px solid rgba(78,130,198,.2);
+      border-radius: 13px;
+      background: rgba(255,255,255,.78);
+    }
+    .time-item strong { color: var(--color-primary); font-size: 15px; }
+    .time-item span { color: var(--color-text-muted); font-size: 13px; text-align: right; }
+
+    /* FAQ */
+    .faq-layout { display: grid; grid-template-columns: .7fr 1.3fr; gap: 90px; align-items: start; }
+    .faq-aside p { max-width: 350px; color: var(--color-text-muted); }
+    .faq-list { border-top: 1px solid var(--color-border); }
+    .faq-item { border-bottom: 1px solid var(--color-border); }
+    .faq-question {
+      display: flex;
+      width: 100%;
+      min-height: 76px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 20px 0;
+      border: 0;
+      background: transparent;
+      color: var(--color-primary);
+      font-size: 16px;
+      font-weight: 700;
+      text-align: left;
+    }
+    .faq-plus {
+      display: grid;
+      width: 32px;
+      height: 32px;
+      flex-shrink: 0;
+      place-items: center;
+      border: 1px solid var(--color-border-strong);
+      border-radius: 50%;
+      color: var(--color-secondary-dark);
+      font-size: 20px;
+      font-weight: 400;
+      transition: transform .2s ease, background .2s ease;
+    }
+    .faq-question[aria-expanded="true"] .faq-plus { transform: rotate(45deg); background: var(--color-secondary-light); }
+    .faq-answer { max-width: 690px; padding: 0 48px 22px 0; color: var(--color-text-muted); font-size: 15px; }
+    .faq-answer[hidden] { display: none; }
+    .faq-answer p { margin: 0; }
+
+    /* Contact */
+    .contact-section { padding: 100px 0; background: var(--color-primary); color: #fff; }
+    .contact-grid { display: grid; grid-template-columns: 1fr .85fr; gap: 80px; align-items: start; }
+    .contact-section .section-title { color: #fff; }
+    .contact-section .section-intro { color: rgba(255,255,255,.7); }
+    .contact-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+    .contact-details { padding: 30px; border: 1px solid rgba(255,255,255,.16); border-radius: 18px; background: rgba(255,255,255,.055); }
+    .contact-details h3 { margin: 0 0 25px; color: #fff; font-family: var(--font-heading); font-size: 20px; font-weight: 600; }
+    .contact-row { padding: 17px 0; border-top: 1px solid rgba(255,255,255,.14); }
+    .contact-row small { display: block; margin-bottom: 5px; color: var(--color-accent); font-size: 11px; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
+    .contact-row a, .contact-row address { color: #fff; font-size: 15px; font-style: normal; line-height: 1.6; }
+    .contact-row a:hover { color: var(--color-secondary); }
+    .contact-note { margin: 20px 0 0; color: rgba(255,255,255,.55); font-size: 12px; }
+
+    /* Footer */
+    .site-footer { padding: 32px 0 90px; background: var(--color-primary-dark); color: rgba(255,255,255,.68); }
+    .footer-main { display: flex; align-items: center; justify-content: space-between; gap: 30px; padding-bottom: 25px; border-bottom: 1px solid rgba(255,255,255,.12); }
+    .footer-main .brand-name { color: #fff; }
+    .footer-main .brand-name small { color: rgba(255,255,255,.55); }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 22px; }
+    .footer-links a { font-size: 13px; }
+    .footer-links a:hover { color: var(--color-secondary); }
+    .footer-bottom { display: flex; justify-content: space-between; gap: 20px; padding-top: 20px; font-size: 12px; }
+    .footer-bottom p { margin: 0; }
+
+    /* Mobile persistent conversion bar: exactly two actions */
+    .mobile-cta {
+      position: fixed;
+      z-index: 110;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: none;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      padding: 11px 16px calc(11px + env(safe-area-inset-bottom));
+      border-top: 1px solid var(--color-border);
+      background: rgba(255,255,255,.97);
+      box-shadow: 0 -8px 28px rgba(32,43,62,.1);
+      backdrop-filter: blur(14px);
+    }
+    .mobile-cta a {
+      display: flex;
+      min-height: 48px;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      border-radius: 999px;
+      background: var(--color-primary);
+      color: #fff;
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .mobile-cta a:first-child { background: var(--color-secondary); color: var(--color-primary-dark); }
+
+    /* Motion and responsive behaviour */
+    .reveal { opacity: 0; transform: translateY(18px); transition: opacity .65s ease, transform .65s ease; }
+    .reveal.is-visible { opacity: 1; transform: translateY(0); }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; }
+      .reveal { opacity: 1; transform: none; }
+    }
+
+    @media (max-width: 1050px) {
+      .main-nav { gap: 18px; }
+      .hero-grid { gap: 42px; }
+      .hero-visual { min-height: 500px; }
+      .needs-layout, .faq-layout { gap: 50px; }
+      .approach-grid { gap: 55px; }
+      .contact-grid { gap: 50px; }
+    }
+    @media (max-width: 820px) {
+      .section { padding: 82px 0; }
+      .nav-wrap { min-height: 74px; }
+      .menu-toggle { display: block; }
+      .nav-actions > .button { display: none; }
+      .main-nav {
+        position: fixed;
+        top: 74px;
+        right: 0;
+        left: 0;
+        display: none;
+        align-items: stretch;
+        gap: 0;
+        padding: 14px 24px 24px;
+        border-bottom: 1px solid var(--color-border);
+        background: #fff;
+        box-shadow: 0 18px 25px rgba(32,43,62,.08);
+      }
+      .main-nav.is-open { display: flex; flex-direction: column; }
+      .main-nav a { padding: 14px 0; border-bottom: 1px solid var(--color-border); font-size: 16px; }
+      .hero { padding: 35px 0 70px; }
+      .hero-grid { grid-template-columns: 1fr; gap: 20px; }
+      .hero-copy { padding: 25px 0 0; }
+      .hero h1 { max-width: 700px; font-size: clamp(44px, 9vw, 68px); }
+      .hero-visual { width: min(100%, 620px); min-height: 500px; margin: 0 auto; }
+      .hero-photo { inset: 0 0 30px 20px; }
+      .hero-index { left: -2px; }
+      .needs-layout, .faq-layout { grid-template-columns: 1fr; gap: 35px; }
+      .needs-aside { position: static; }
+      .needs-aside p { max-width: 600px; }
+      .treatment-heading, .team-top { display: block; }
+      .treatment-heading .section-intro, .team-top .section-intro { margin-top: 20px; }
+      .treatment-grid { grid-template-columns: 1fr; }
+      .treatment { min-height: auto; padding: 30px 0; }
+      .treatment + .treatment { padding-left: 0; border-left: 0; border-top: 1px solid var(--color-border); }
+      .treatment p { min-height: 0; max-width: 580px; }
+      .statement-inner { grid-template-columns: 1fr; gap: 20px; }
+      .statement-mark { font-size: 70px; }
+      .approach-grid { grid-template-columns: 1fr; gap: 42px; }
+      .approach-image { min-height: 470px; }
+      .team-grid { grid-template-columns: 1fr 1fr; }
+      .workday-inner { grid-template-columns: 1fr; gap: 35px; }
+      .contact-grid { grid-template-columns: 1fr; gap: 42px; }
+      .mobile-cta { display: grid; }
+      .site-footer { padding-bottom: 115px; }
+    }
+    @media (max-width: 560px) {
+      body { font-size: 16px; }
+      .container { width: min(100% - 36px, var(--container)); }
+      .section { padding: 68px 0; }
+      .section-title { font-size: 36px; }
+      .section-intro { font-size: 16px; }
+      .brand-mark { width: 38px; height: 38px; }
+      .brand-name { font-size: 19px; }
+      .hero { padding-top: 23px; }
+      .hero h1 { font-size: clamp(42px, 12vw, 56px); }
+      .hero-description { margin: 20px 0 24px; font-size: 16px; }
+      .hero-actions { display: grid; grid-template-columns: 1fr; }
+      .hero-actions .button { width: 100%; }
+      .hero-note { flex-wrap: wrap; line-height: 1.5; }
+      .hero-visual { min-height: 390px; padding-left: 15px; }
+      .hero-photo { inset: 0 0 27px 15px; border-radius: 45% 45% 16px 16px; }
+      .hero-index { top: 22px; width: 62px; height: 62px; border-width: 6px; font-size: 19px; }
+      .hero-caption { right: -3px; width: 235px; padding: 17px 18px; }
+      .trust-inner { grid-template-columns: 1fr; gap: 16px; padding: 22px 0; }
+      .trust-item { justify-content: flex-start; }
+      .trust-divider { display: none; }
+      .needs-list { grid-template-columns: 1fr; }
+      .need:nth-child(odd) { margin-right: 0; }
+      .need { min-height: 70px; }
+      .statement { padding: 70px 0; }
+      .statement blockquote { font-size: 34px; }
+      .approach-image { min-height: 380px; border-top-right-radius: 120px; }
+      .team-grid { grid-template-columns: 1fr; gap: 15px; }
+      .team-member { padding: 24px; }
+      .team-member p { min-height: 0; }
+      .workday { padding: 70px 0; }
+      .time-item { align-items: flex-start; padding: 16px; }
+      .time-item span { max-width: 48%; }
+      .faq-question { min-height: 70px; font-size: 15px; }
+      .faq-answer { padding-right: 12px; }
+      .contact-section { padding: 72px 0; }
+      .contact-details { padding: 23px; }
+      .contact-actions { display: grid; }
+      .contact-actions .button { width: 100%; }
+      .footer-main, .footer-bottom { align-items: flex-start; flex-direction: column; }
+      .footer-links { gap: 15px; }
+      .mobile-cta { padding-inline: 12px; }
+      .mobile-cta a { font-size: 12px; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    "name": "AcuMyo Physiotherapy Center",
+    "url": "https://acumyo.com/",
+    "description": "Physiotherapy, acupuncture, manual therapy and personalised rehabilitation in Jumeirah Village Circle, Dubai.",
+    "telephone": "+97142511062",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Prime Business Center, Building B, Office 401, Jumeirah Village Circle",
+      "addressLocality": "Dubai",
+      "addressCountry": "AE"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Dubai"
+    },
+    "medicalSpecialty": [
+      "Physiotherapy",
+      "PhysicalTherapy",
+      "Acupuncture"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="AcuMyo home">
+        <span class="brand-mark" aria-hidden="true">A</span>
+        <span class="brand-name">AcuMyo<small>Physiotherapy Center</small></span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <a href="#care">Treatments</a>
+        <a href="#approach">Our approach</a>
+        <a href="#team">Our team</a>
+        <a href="#faq">FAQs</a>
+        <a href="#contact">Find us</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="button" href="https://wa.me/971585678675?text=Hello%2C%20I%27d%20like%20to%20book%20a%20consultation" target="_blank" rel="noopener">Book a consultation</a>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mainNav">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="hero-kicker"><i></i> Physiotherapy & personalised care in JVC, Dubai</div>
+          <h1>Move with less pain. Live with <em>more freedom.</em></h1>
+          <p class="hero-description">
+            When pain, stiffness or restricted movement starts affecting everyday life,
+            the right care can help you move forward. AcuMyo brings physiotherapy,
+            acupuncture and hands-on therapies together around your individual needs.
+          </p>
+          <div class="hero-actions">
+            <a class="button button--blue" href="https://wa.me/971585678675?text=Hello%2C%20I%27d%20like%20to%20book%20a%20consultation" target="_blank" rel="noopener">
+              Book your consultation <span aria-hidden="true">↗</span>
+            </a>
+            <a class="button" href="#care">Explore treatments <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-note">
+            <strong>Care shaped around you</strong><span class="dot"></span>
+            <span>Assessment-led treatment</span><span class="dot"></span>
+            <span>Jumeirah Village Circle</span>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Physiotherapy treatment setting">
+          <div class="hero-photo">
+            <img
+              src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1100&q=85"
+              alt="Healthcare professional providing a patient-focused consultation"
+              fetchpriority="high"
+              width="1100"
+              height="1350">
+          </div>
+          <div class="hero-index" aria-hidden="true">AM.</div>
+          <div class="hero-caption">
+            <small>The AcuMyo approach</small>
+            <strong>Understand the cause. Support better movement.</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="AcuMyo care principles">
+      <div class="container trust-inner">
+        <div class="trust-item">
+          <div><b>Individual assessment</b><br><span>Care begins with understanding your needs</span></div>
+        </div>
+        <div class="trust-divider" aria-hidden="true"></div>
+        <div class="trust-item">
+          <div><b>Integrated treatment options</b><br><span>Different therapies, considered together</span></div>
+        </div>
+        <div class="trust-divider" aria-hidden="true"></div>
+        <div class="trust-item">
+          <div><b>Convenient JVC location</b><br><span>Designed around modern working life</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="concerns">
+      <div class="container needs-layout">
+        <div class="needs-aside reveal">
+          <div class="eyebrow">Start with what you feel</div>
+          <h2 class="section-title">Your body is telling you something.</h2>
+          <p>
+            Persistent discomfort can affect how you work, rest and move.
+            Understanding what is limiting you is the first step towards a more
+            considered care plan.
+          </p>
+          <a class="text-link" href="#contact">Talk to the clinic <span aria-hidden="true">→</span></a>
+        </div>
+
+        <div class="needs-content reveal">
+          <p class="needs-intro">
+            AcuMyo works with people experiencing pain, tension and movement
+            limitations, including concerns connected with prolonged sitting,
+            repetitive activity and physical demands.
+          </p>
+          <div class="needs-list">
+            <div class="need"><span class="need-number">01</span><strong>Neck and shoulder discomfort</strong></div>
+            <div class="need"><span class="need-number">02</span><strong>Back and lower-back pain</strong></div>
+            <div class="need"><span class="need-number">03</span><strong>Muscle tension and stiffness</strong></div>
+            <div class="need"><span class="need-number">04</span><strong>Headaches and postural concerns</strong></div>
+            <div class="need"><span class="need-number">05</span><strong>Sports-related injuries</strong></div>
+            <div class="need"><span class="need-number">06</span><strong>Restricted movement and mobility</strong></div>
+          </div>
+          <p style="margin:22px 0 0;color:var(--color-text-muted);font-size:13px">
+            The appropriate treatment depends on an individual assessment and clinical suitability.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft" id="care">
+      <div class="container">
+        <div class="treatment-heading reveal">
+          <div>
+            <div class="eyebrow">Treatment options</div>
+            <h2 class="section-title">Different techniques. One considered care plan.</h2>
+          </div>
+          <p class="section-intro">
+            Explore the therapies available at AcuMyo. Your practitioner can
+            discuss which options may be appropriate after assessing your needs.
+          </p>
+        </div>
+
+        <div class="treatment-grid">
+          <article class="treatment reveal">
+            <span class="treatment-number">01 / 03</span>
+            <div class="treatment-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32">
+                <path d="M5 23c4-1 5-7 9-8 3-1 4 2 7 1 2-1 3-4 6-5"/>
+                <path d="M6 27c5-1 7-4 10-4 3 0 4 2 8 0"/>
+                <path d="M11 7c2-2 5-2 7 0M14 4v6"/>
+              </svg>
+            </div>
+            <h3>Physiotherapy</h3>
+            <p>
+              Assessment-led support for pain, mobility, movement limitations
+              and rehabilitation needs, with care shaped around your condition.
+            </p>
+            <a class="text-link" href="#contact">Enquire about physiotherapy <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="treatment reveal">
+            <span class="treatment-number">02 / 03</span>
+            <div class="treatment-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32">
+                <path d="M16 4v24M8 10l16 12M24 10L8 22"/>
+                <circle cx="16" cy="16" r="10"/>
+                <path d="M16 2v4M16 26v4M2 16h4M26 16h4"/>
+              </svg>
+            </div>
+            <h3>Acupuncture</h3>
+            <p>
+              A traditional treatment approach offered by the clinic as part of
+              its wider range of care options, subject to individual assessment.
+            </p>
+            <a class="text-link" href="#contact">Enquire about acupuncture <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="treatment reveal">
+            <span class="treatment-number">03 / 03</span>
+            <div class="treatment-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32">
+                <path d="M5 19c3-6 6-9 11-9s8 3 11 9"/>
+                <path d="M7 22c3 3 6 4 9 4s6-1 9-4"/>
+                <path d="M11 7c1-2 3-3 5-3s4 1 5 3"/>
+                <path d="M12 15l4 4 4-4"/>
+              </svg>
+            </div>
+            <h3>Manual & hands-on therapy</h3>
+            <p>
+              Hands-on techniques and therapeutic approaches that may include
+              soft-tissue work, myofascial release and other suitable methods.
+            </p>
+            <a class="text-link" href="#contact">Explore hands-on care <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:25px;flex-wrap:wrap;margin-top:30px">
+          <p style="margin:0;color:var(--color-text-muted);font-size:14px">
+            Other clinic services include Hijama, dry needling, therapeutic massage and lymphatic drainage approaches.
+          </p>
+          <a class="text-link" href="https://acumyo.com/services-qa/" target="_blank" rel="noopener">Read services & Q&A <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="statement">
+      <div class="container statement-inner">
+        <div class="statement-mark" aria-hidden="true">AM.</div>
+        <div>
+          <blockquote>
+            Better care starts by looking beyond the painful area —
+            towards the way your body <span>moves, works and lives.</span>
+          </blockquote>
+          <p class="statement-note">AcuMyo · Less Pain. More Life.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="approach">
+      <div class="container approach-grid">
+        <div class="approach-image reveal">
+          <img
+            src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1000&q=85"
+            alt="Guided movement and rehabilitation session"
+            loading="lazy"
+            width="1000"
+            height="1200">
+          <div class="approach-tag">A more complete view of how your body moves.</div>
+        </div>
+
+        <div class="approach-copy reveal">
+          <div class="eyebrow">The AcuMyo approach</div>
+          <h2 class="section-title">Understand first. Treat with purpose.</h2>
+          <p class="section-intro">
+            Every treatment begins with professional assessment. The clinic's
+            approach considers more than the area where discomfort appears,
+            including posture, movement patterns, muscle and fascial tension,
+            work habits and everyday physical demands.
+          </p>
+
+          <div class="approach-steps">
+            <div class="approach-step">
+              <span>01</span>
+              <div>
+                <h3>Listen and assess</h3>
+                <p>Discuss your concerns, daily activities and movement goals.</p>
+              </div>
+            </div>
+            <div class="approach-step">
+              <span>02</span>
+              <div>
+                <h3>Understand your needs</h3>
+                <p>Consider posture, movement, tension and relevant physical demands.</p>
+              </div>
+            </div>
+            <div class="approach-step">
+              <span>03</span>
+              <div>
+                <h3>Plan suitable care</h3>
+                <p>Discuss appropriate treatment options based on the assessment.</p>
+              </div>
+            </div>
+            <div class="approach-step">
+              <span>04</span>
+              <div>
+                <h3>Review your progress</h3>
+                <p>Adapt the approach according to your response and ongoing needs.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft" id="team">
+      <div class="container">
+        <div class="team-top reveal">
+          <div>
+            <div class="eyebrow">The people behind your care</div>
+            <h2 class="section-title">A team with different areas of focus.</h2>
+          </div>
+          <p class="section-intro">
+            AcuMyo's clinical team brings together experience across traditional
+            and contemporary treatment approaches.
+          </p>
+        </div>
+
+        <div class="team-grid">
+          <article class="team-member reveal">
+            <div class="team-symbol" aria-hidden="true">
+              <svg viewBox="0 0 32 32">
+                <circle cx="16" cy="10" r="5"/>
+                <path d="M6 28c0-6 4-10 10-10s10 4 10 10"/>
+                <path d="M22 5l3 3M25 5l-3 3"/>
+              </svg>
+            </div>
+            <small>Founder · TCM & Acupuncture</small>
+            <h3>Dr. Xin</h3>
+            <p>
+              A traditional Chinese medicine and acupuncture specialist with
+              over 17 years of clinical experience and a particular interest
+              in facial paralysis and Bell's palsy.
+            </p>
+          </article>
+
+          <article class="team-member reveal">
+            <div class="team-symbol" aria-hidden="true">
+              <svg viewBox="0 0 32 32">
+                <circle cx="16" cy="10" r="5"/>
+                <path d="M6 28c0-6 4-10 10-10s10 4 10 10"/>
+                <path d="M7 8h3M22 8h3"/>
+              </svg>
+            </div>
+            <small>Medical Director</small>
+            <h3>Dr. Avani Manoharan</h3>
+            <p>
+              Clinical interests include Hijama, women's health, migraine
+              management, manual lymphatic drainage and facial care.
+            </p>
+          </article>
+
+          <article class="team-member reveal">
+            <div class="team-symbol" aria-hidden="true">
+              <svg viewBox="0 0 32 32">
+                <circle cx="16" cy="10" r="5"/>
+                <path d="M6 28c0-6 4-10 10-10s10 4 10 10"/>
+                <path d="M11 22h10M16 19v7"/>
+              </svg>
+            </div>
+            <small>Physiotherapist</small>
+            <h3>Dr. Sania Rubi</h3>
+            <p>
+              Focus areas include orthopaedic rehabilitation, manual therapy,
+              myofascial release and manual lymphatic drainage.
+            </p>
+          </article>
+        </div>
+        <p class="team-footnote">
+          The clinic's wider clinical team also includes Dr. Muhammed Dilroob C.,
+          Technical and Clinical Treatment Director.
+        </p>
+      </div>
+    </section>
+
+    <section class="workday" id="appointments">
+      <div class="container workday-inner">
+        <div class="reveal">
+          <div class="eyebrow">Care around your day</div>
+          <h2 class="section-title">Your schedule is busy. Your wellbeing still matters.</h2>
+          <p>
+            AcuMyo offers appointment options intended to work around modern
+            working life, including before work, during lunch breaks and after
+            office hours, subject to availability.
+          </p>
+          <a class="button" href="https://wa.me/971585678675?text=Hello%2C%20I%27d%20like%20to%20ask%20about%20appointment%20availability" target="_blank" rel="noopener">
+            Ask about availability <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+        <div class="time-list reveal" aria-label="Appointment timing options">
+          <div class="time-item"><strong>Before work</strong><span>Start your day with care</span></div>
+          <div class="time-item"><strong>Lunch break</strong><span>Make space in the middle of your day</span></div>
+          <div class="time-item"><strong>After office hours</strong><span>Ask about later appointments</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container faq-layout">
+        <div class="faq-aside reveal">
+          <div class="eyebrow">Good to know</div>
+          <h2 class="section-title">Questions before your first visit?</h2>
+          <p>
+            A few helpful details about appointments, treatment planning and
+            what to expect when you contact AcuMyo.
+          </p>
+          <a class="text-link" href="https://acumyo.com/services-qa/" target="_blank" rel="noopener">Visit the full Q&A <span aria-hidden="true">↗</span></a>
+        </div>
+
+        <div class="faq-list reveal">
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-a1">
+              What concerns can AcuMyo help assess?
+              <span class="faq-plus" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-a1" hidden>
+              <p>
+                The clinic lists concerns such as neck, shoulder, back and
+                lower-back pain, muscle tension, joint stiffness, headaches,
+                postural problems, sports injuries and movement limitations.
+                The appropriate care depends on an individual assessment.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-a2">
+              How long is a typical treatment session?
+              <span class="faq-plus" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-a2" hidden>
+              <p>
+                AcuMyo's published Q&A states that most sessions are
+                approximately 45 minutes. The duration can depend on the
+                treatment and your individual needs.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-a3">
+              How many sessions will I need?
+              <span class="faq-plus" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-a3" hidden>
+              <p>
+                There is no fixed number of sessions for everyone. Your
+                practitioner can discuss a suitable plan after assessing
+                your condition and reviewing your progress.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-a4">
+              Do I need a referral before booking?
+              <span class="faq-plus" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-a4" hidden>
+              <p>
+                The clinic's published information says direct booking is
+                usually possible without a referral. Some insurance policies
+                or individual circumstances may require one, so check before
+                your appointment if this applies to you.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-a5">
+              Can I claim treatment through my insurance?
+              <span class="faq-plus" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-a5" hidden>
+              <p>
+                AcuMyo states that eligible invoices, receipts or reports may
+                be provided for reimbursement. Coverage and approval depend
+                on your individual policy and insurer.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-a6">
+              Can different treatments be combined?
+              <span class="faq-plus" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-a6" hidden>
+              <p>
+                The clinic may consider combinations of physiotherapy,
+                acupuncture, manual therapy, therapeutic massage, dry needling,
+                Hijama and rehabilitation exercises, depending on the
+                assessment and clinical suitability.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <div class="eyebrow">Your next step</div>
+          <h2 class="section-title">Let's start with a conversation.</h2>
+          <p class="section-intro">
+            Tell the AcuMyo team what has been affecting your movement.
+            They can help you understand the next step and discuss appointment
+            availability.
+          </p>
+          <div class="contact-actions">
+            <a class="button button--blue" href="https://wa.me/971585678675?text=Hello%2C%20I%27d%20like%20to%20book%20a%20consultation" target="_blank" rel="noopener">
+              Message on WhatsApp <span aria-hidden="true">↗</span>
+            </a>
+            <a class="button button--outline" href="tel:+97142511062">Call the clinic</a>
+          </div>
+        </div>
+
+        <div class="contact-details reveal">
+          <h3>Visit AcuMyo in JVC</h3>
+          <div class="contact-row">
+            <small>Clinic address</small>
+            <address>Prime Business Center, Building B, Office 401, Jumeirah Village Circle, Dubai, UAE</address>
+          </div>
+          <div class="contact-row">
+            <small>Telephone</small>
+            <a href="tel:+97142511062">+971 4 251 1062</a>
+          </div>
+          <div class="contact-row">
+            <small>WhatsApp appointments</small>
+            <a href="https://wa.me/971585678675?text=Hello%2C%20I%27d%20like%20to%20book%20a%20consultation" target="_blank" rel="noopener">Send AcuMyo a WhatsApp message ↗</a>
+          </div>
+          <div class="contact-row">
+            <small>Website</small>
+            <a href="https://acumyo.com/" target="_blank" rel="noopener">acumyo.com</a>
+          </div>
+          <p class="contact-note">
+            Please confirm appointment availability and directions with the clinic before travelling.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-main">
+        <a class="brand" href="#home" aria-label="AcuMyo home">
+          <span class="brand-mark" aria-hidden="true">A</span>
+          <span class="brand-name">AcuMyo<small>Physiotherapy Center</small></span>
+        </a>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="#care">Treatments</a>
+          <a href="#approach">Our approach</a>
+          <a href="#team">Our team</a>
+          <a href="#faq">FAQs</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="currentYear"></span> AcuMyo Physiotherapy Center. All rights reserved.</p>
+        <p>Less Pain. More Life.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="mobile-cta" aria-label="Quick contact actions">
+    <a href="https://wa.me/971585678675?text=Hello%2C%20I%27d%20like%20to%20book%20a%20consultation" target="_blank" rel="noopener">WhatsApp <span aria-hidden="true">↗</span></a>
+    <a href="tel:+97142511062">Call clinic</a>
+  </div>
+
+  <script>
+    (() => {
+      const menuToggle = document.getElementById("menuToggle");
+      const mainNav = document.getElementById("mainNav");
+
+      if (menuToggle && mainNav) {
+        menuToggle.addEventListener("click", () => {
+          const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+          menuToggle.setAttribute("aria-expanded", String(!isOpen));
+          menuToggle.setAttribute("aria-label", isOpen ? "Open navigation" : "Close navigation");
+          mainNav.classList.toggle("is-open", !isOpen);
+          document.body.classList.toggle("menu-open", !isOpen);
+        });
+
+        mainNav.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", () => {
+            mainNav.classList.remove("is-open");
+            menuToggle.setAttribute("aria-expanded", "false");
+            menuToggle.setAttribute("aria-label", "Open navigation");
+            document.body.classList.remove("menu-open");
+          });
+        });
+
+        document.addEventListener("keydown", (event) => {
+          if (event.key === "Escape") {
+            mainNav.classList.remove("is-open");
+            menuToggle.setAttribute("aria-expanded", "false");
+            menuToggle.setAttribute("aria-label", "Open navigation");
+            document.body.classList.remove("menu-open");
+          }
+        });
+      }
+
+      document.querySelectorAll(".faq-question").forEach((button) => {
+        button.addEventListener("click", () => {
+          const expanded = button.getAttribute("aria-expanded") === "true";
+          const answer = document.getElementById(button.getAttribute("aria-controls"));
+          button.setAttribute("aria-expanded", String(!expanded));
+          if (answer) answer.hidden = expanded;
+        });
+      });
+
+      const year = document.getElementById("currentYear");
+      if (year) year.textContent = new Date().getFullYear();
+
+      const revealItems = document.querySelectorAll(".reveal");
+      if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        const observer = new IntersectionObserver((entries, currentObserver) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              currentObserver.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12 });
+        revealItems.forEach((item) => observer.observe(item));
+      } else {
+        revealItems.forEach((item) => item.classList.add("is-visible"));
+      }
+    })();
+  </script>
+</body>
+</html>
